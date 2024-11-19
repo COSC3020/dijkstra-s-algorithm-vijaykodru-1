@@ -23,3 +23,23 @@ inefficient.
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The big $\Theta$ complexity of my implementation of the code is $\Theta(v^2)$. This is because the first for loop goes through all the nodes $v$ times to initialize their distance to be infinite and the source node to 0. Then the main while loop takes $v$ iterations to find the closest node and $v$ iterations to update the distance which adds up to $2v$.
+
+In total it is $v * 2v = 2v^2$. Asymptotically constants are ignored, so the time complexity is $\Theta(v^2)$.
+
+
+
+References:
+
+https://www.youtube.com/watch?v=_lHSawdgXpI used the video to undestand how dijkstra's algorithm works with exmaples of graphs
+
+https://www.cs.usfca.edu/~galles/visualization/Dijkstra.html visulized the dijkstra's algorithm to better understand how to loop through the nodes 
+
+https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/ helped me with the pseudo code for writing the algorithm
+
+dijkstra-s-algorithm-CollinDavis03 looked at this repository for initialization of the distances for the nodes to be infinite and the source node to be 0
+
+ChatGPT helped me write the check for a empty graph. I was able to write it originally for the source node not being in the graph but wasn't sure how to check weather the graph is actually empty. 
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice
