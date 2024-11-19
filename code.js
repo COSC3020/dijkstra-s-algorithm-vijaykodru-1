@@ -1,4 +1,10 @@
 function dijkstra(graph, sourceNode) {
+
+    //ChaptGPT helped me do this check if the graph is empty 
+    if (!graph[sourceNode] && Object.keys(graph).length === 0) {
+        return { dist: {}, marked: {} };
+    }
+
     const sptSet = new Set();   //shortest path
     const dist = {};    // distances from sourceNode to other nodes
     const marked = {};   // Tracks all the visited nodes
@@ -8,7 +14,9 @@ function dijkstra(graph, sourceNode) {
         dist[node] = Infinity;
         marked[node] = null;
     }
-    dist[sourceNode] = 0;
+    if (graph[sourceNode]) {
+        dist[sourceNode] = 0;
+    }
 
     //while there are unmarked vertices left in the graph
     while (true) {

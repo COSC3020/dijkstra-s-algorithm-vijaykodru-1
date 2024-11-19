@@ -40,4 +40,6 @@ https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/ h
 
 dijkstra-s-algorithm-CollinDavis03 looked at this repository for initialization of the distances for the nodes to be infinite and the source node to be 0
 
+ChatGPT helped me write the check for a empty graph. I was able to write it originally for the source node not being in the graph but wasn't sure how to check weather the graph is actually empty. 
+
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice
